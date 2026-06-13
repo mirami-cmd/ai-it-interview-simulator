@@ -51,6 +51,7 @@ function nextQuestion() {
 }
 
 function finish() {
+    document.getElementById('result-text').textContent = "Интервью завершено. Спасибо за участие!";
     document.getElementById('result-text').textContent = "Интервью завершено. Оцените себя и подумайте о премиуме!";
     showScreen('screen-result');
 }
