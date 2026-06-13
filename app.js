@@ -43,6 +43,13 @@ function displayQuestion() {
 
 function nextQuestion() {
     currentQuestion++;
+    // After 30% of the interview questions, block further progress and prompt premium purchase
+    if (currentQuestion >= Math.ceil(questions.length * 0.3)) {
+        // Show premium modal and stop the interview
+        openPremium();
+        // Optionally, clear remaining questions to prevent further navigation
+        return;
+    }
     if (currentQuestion < questions.length) {
         displayQuestion();
     } else {
