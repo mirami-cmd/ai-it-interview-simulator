@@ -1,5 +1,5 @@
 // app.js – client logic for AI IT Interview Simulator
-const BACKEND_URL = "https://your-backend-url.pythonanywhere.com"; // placeholder – will be replaced after deploy
+const BACKEND_URL = "https://discozet.pythonanywhere.com"; // placeholder – will be replaced after deploy
 
 let currentQuestion = 0;
 let questions = [];
