@@ -31,6 +31,11 @@ function startInterview() {
 }
 
 function displayQuestion() {
+    // 30% chance to suggest premium after showing a question
+    if (Math.random() < 0.3) {
+        // Slight delay to let user see the question first
+        setTimeout(openPremium, 500);
+    }
     document.getElementById('question-title').textContent = questions[currentQuestion];
     document.getElementById('answer').value = '';
     showScreen('screen-interview');
